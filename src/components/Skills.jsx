@@ -54,10 +54,10 @@ export default function Skills() {
 
       <div className="arrows-container">
         <button className="custom-arrow left" onClick={() => carouselRef.current.previous()}>
-          ⬅
+          &#8592; {/* ← */}
         </button>
         <button className="custom-arrow right" onClick={() => carouselRef.current.next()}>
-          ➡
+          &#8594; {/* → */}
         </button>
       </div>
     </div>
