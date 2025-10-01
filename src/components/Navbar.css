@@ -1,0 +1,130 @@
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: transform 0.5 ease, color 0.3s ease;
+    display: inline-flex;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navLinks li a:hover {
+    color: #3f074b;
+    transform: scale(1.05);
+}
+
+
+.navContactButton {
+    background-color: #D8C5EF;
+    color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.contactButton:hover {
+    background-color: #C9A8E0;
+    transform: scale(1.01);
+}
+
+
+.siteTitle a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none; 
+    font-family: 'Orbitron', sans-serif;
+    transition: transform 0.2 ease, color 0.3s ease;
+    color: #3f074b;      
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.siteTitle a:hover {
+    color: #3f074b;
+    transform: scale(1.1);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;                     /* center the navbar */
+  transform: translateX(-50%);   /* offset half its width to truly center */
+  width: calc(100% - 40px);      /*keep margin in place*/
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;           
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  border: 2px solid #D8C5EF;
+  z-index: 100;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+/*button for mobile, keep hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .siteTitle {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .siteTitle a {
+    font-size: 1.2rem;
+  }
+
+  .navLinks li a {
+    font-size: 0.9rem;
+  }
+
+  .navContactButton {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

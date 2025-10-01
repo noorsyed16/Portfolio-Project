@@ -1,0 +1,80 @@
+.bg{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    border-width: 20px;
+    border-color: #D8C5EF;
+    border-style: solid;
+    background-color: #F2EEF4;
+    width: 100%; 
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+.hero h1{
+    color: #000000;
+    font-size: 8vh;
+}
+
+.hero p{
+    color: #000000;
+    font-size: 3vh;
+}
+
+
+
+.main {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  min-height: 100vh;
+  padding: 30vh 0 0 0;   
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size:2rem;
+
+    scroll-margin-top: 28vh;
+
+  }
+
+  .research{
+    margin: 2rem 0;
+    border-radius: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+
+    padding: 0 1rem;
+  }
+
+  .line
+  {
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+    height:50vh;
+    width: 1px;
+    align-self: center;   
+
+  }

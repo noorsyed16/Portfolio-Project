@@ -1,0 +1,60 @@
+.timeline-container{
+    width: 100%;
+    padding: 20px;
+    background-color:#F5F5F5;
+
+    scroll-margin-top: 10vh;
+}
+
+.timeline-icon-purple {
+  background: #D8C5EF;
+  color: #fff;
+}
+
+.Skills {
+  font-weight: bold;
+}
+
+.vertical-timeline-element-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #3f074b;
+}
+
+.vertical-timeline-element-subtitle,
+.timeline-section p {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.vertical-timeline-element-content h2,
+.vertical-timeline-element-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.vertical-timeline-element-content h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.vertical-timeline-element-content p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Heading */
+.skillsHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3f074b;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  transform: translateX(-1.65%);
+}
+
+.vertical-timeline {
+  margin-left: 0;       
+  margin-right: 0;     
+  max-width: none; 
+  transform: translateX(-1.65%); /* ensure timeline is cnetered like all other elements*/
+}
+

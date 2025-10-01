@@ -1,26 +1,123 @@
-@import "tailwindcss";
+/* globals.css */
 
+/* Root variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F5F5F5;
+  --foreground: #000000;
+
+  /* gradient glows for the moving background*/
+  --secondary-glow: conic-gradient(
+    from 10deg at 50% 50%,
+    #7fb4dc 0deg,
+    #ad55ec 55deg,
+    #7093be 120deg,
+    #7cc7ec 160deg,
+    transparent 360deg
+  );
+
+  --third-glow: conic-gradient(
+    from 90deg at 50% 50%,
+    #75b9d4 0deg,
+    #a97ec8 160deg,
+    #a3c0d3 120deg,
+    #91b7e9 55deg,
+    transparent 360deg
+  );
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Dark mode stays the same */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F5F5F5;
+    --foreground: #000000;
   }
 }
 
+/* Body styles */
 body {
-  background: var(--background);
+  margin: 0;
+  padding: 0;
+  position: relative; /* Needed for pseudo-elements */
+  min-height: 100vh;
   color: var(--foreground);
+  background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* prevents horizontal scroll */
 }
+
+/* Animated gradient pseudo-elements */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  z-index: -1; /* ensure the glows are in the background, behind all other content*/
+  opacity: 0.8;
+  border-radius: 50%;
+  filter: blur(90px);
+}
+
+body::before {
+  background: var(--third-glow);
+  width: 50vw;
+  height: 50vw;
+  top: calc(50vh - 25vw);
+  left: 50vw;
+  animation: animateBefore 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+body::after {
+  background: var(--secondary-glow);
+  width: 500px;
+  height: 700px;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 250px);
+  animation: animateAfter 4s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+/* Keyframes for animations */
+@keyframes animateBefore {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(200px) scale(0.8);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes animateAfter {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(-300px) scale(1.2);
+    
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+#about {
+  scroll-margin-top: 20vh; /* ensure scroll puts the about me in the center */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* keep horizontal scroll away */
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 2rem 0; /* uniform vertical spacing */
+}
+

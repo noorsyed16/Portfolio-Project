@@ -1,0 +1,207 @@
+.projectsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  scroll-margin-top: -38vh;
+}
+
+.projectsHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3f074b;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.consoleWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consoleImage {
+  width: 82%;
+  height: auto;
+  display: block;
+  z-index: 1;
+  margin-top: -3.5rem;
+}
+
+.consoleScreen {
+  position: absolute;
+  top: 12%;
+  width: 57%;
+  height: 60%;
+  right: 21%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.projects-carousel-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.projects-carousel-container .react-multi-carousel-item {
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCard {
+  background: white;
+  border-radius: 10px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.projectImage {
+  height: 13vw;
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+
+.projectText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 13vw - 2rem); 
+}
+
+.ProjectTitle {
+  color: #3f074b;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1vw;
+}
+
+.projectDescription, .projectTech, .projectButton {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.projectButton {
+  background-color: #3f074b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 2.5rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.projectButton:hover {
+  background-color: #D8C5EF;
+  transform: scale(1.05);
+}
+
+.line {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  width: 1px;
+  align-self: center;
+}
+
+
+/* Portrait/Mobile Layout */
+/* Main idea is to keep things all stacked on top of each other */
+.portraitCarouselWrapper {
+  width: 95%;
+  max-width: 500px; 
+  margin: 2rem auto;
+}
+
+.portraitCarouselContainer {
+  width: 100% !important;
+}
+
+.portraitCarouselItem {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.portraitProjectCard {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+  margin-bottom: 5rem;
+}
+
+.portraitProjectImage {
+  width: 50%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 0.8rem;
+}
+
+.portraitProjectTitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #3f074b;
+  margin: 0.5rem 0;
+}
+
+.portraitProjectDescription,
+.portraitProjectTech {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.portraitProjectButton {
+  background-color: #3f074b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.portraitProjectButton:hover {
+  background-color: #D8C5EF;
+  transform: scale(1.05);
+}
+
