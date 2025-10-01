@@ -12,6 +12,7 @@ export default function Contact() {
         method="POST" 
         data-netlify="true" 
         netlify-honeypot="bot-field"
+        action="/"            // <-- submit back to this page
         className="contactForm"
       >
         <input type="hidden" name="form-name" value="contact" />
@@ -30,4 +31,3 @@ export default function Contact() {
     </section>
   );
 }
-
