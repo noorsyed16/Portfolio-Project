@@ -6,7 +6,7 @@ export default function Hero() {
     <main className="main">
       <div className="mainDiv" id="hero">
         <h1 className="bigTitle"><span className="welcomeTexjt">Hi,</span> I'm Noor! </h1>
-        <div className='research'>I'm a Software Engineering Student</div>
+        <div className='research'>A Software Developer Intern & Software Engineering Student!</div>
         <div className='research'>Scroll down to discover</div>
         <div className="line"/>
       </div>

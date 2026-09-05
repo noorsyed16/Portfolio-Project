@@ -5,19 +5,19 @@ import 'react-vertical-timeline-component/style.min.css';
 
 // Array for all my items in the timeline
 const timelineData = [
+    {
+    date: "May 2026 - Present",
+    title: "Software Developer Intern",
+    organization: "Pason Systems",
+    description: "Developing backend REST APIs that transform drilling KPIs into useful metrics and information for customers. Adding and modifying frontend widgets to improve usability and accessibility of drilling data. Following established software architecture and company development workflows while creating, reviewing, and merging merge requests",
+    skills: "Java, Spring Boot, React, MySQL, REST APIs, Python, Git, JUnit, Data Analysis, Communication, Teamwork"
+  },
   {
     date: "June 2025 - Present",
     title: "Tech Lead",
     organization: "Data Science and Machine Learning Club",
     description: "Maintained the club website, ensuring timely updates of events and executive info. Currently designing a networking game to help members connect, fostering collaboration and engagement.",
     skills: "Leadership, Teamwork, Communication, Github",
-  },
-  {
-    date: "July 2025 - Present",
-    title: "Co-Founder",
-    organization: "Woven Wishes YYC",
-    description:"Co-founded Woven Wishes, a nonprofit that hosts workshops to create crocheted items for donation to charities and individuals in need. Organized events, sourced supplies, delegated tasks, coordinated with partner organizations, and taught participants to crochet, ensuring smooth and impactful workshops.",
-    skills: "Event Planning, Team Leadership, Community Outreach, Teaching, Project Management, Communication"
   },
   {
     date: "May 2025 - Present",
@@ -32,6 +32,13 @@ const timelineData = [
     organization: "Women in Stem and Engineering",
     description: "Created and delivered promotional content to showcase the club's initiatives and grow social media presence. WISE is a University of Calgary club that empowers women pursuing degrees in STEM fields",
     skills: "Design, Communication, Canva, Marketing",
+  },
+  {
+    date: "July 2025 - Present",
+    title: "Co-Founder",
+    organization: "Woven Wishes YYC",
+    description:"Co-founded Woven Wishes, a nonprofit that hosts workshops to create crocheted items for donation to charities and individuals in need. Organized events, sourced supplies, delegated tasks, coordinated with partner organizations, and taught participants to crochet, ensuring smooth and impactful workshops.",
+    skills: "Event Planning, Team Leadership, Community Outreach, Teaching, Project Management, Communication"
   },
   {
     date: "February 2024 - Present",
@@ -49,7 +56,7 @@ const timelineData = [
   },
   {
     date: "2021 – Present",
-    title: "Students In-Charge",
+    title: "Student In-Charge",
     organization: "AMJ Calgary South",
     description: "Mentored and taught 20 students, guiding them through their syllabus while promoting personal growth, community engagement, and a fun learning environment. Led classes, conducted exams, and maintained accurate records to support student development.",
     skills: "Community Building, Leadership, Teaching, Organization"
