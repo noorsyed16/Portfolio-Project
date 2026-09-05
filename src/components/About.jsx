@@ -8,7 +8,9 @@ export default function About() {
         <div className="aboutSection">
             <h1>About Me</h1>
             <p>Hi! I’m a passionate and motivated Software Engineering student at the University
-               of Calgary. My experiences in technical projects, teaching, and mentoring have 
+               of Calgary. Currently, I am working as a Software Developer Intern at Pason Systems 
+               where I am getting practical experience in backend and frontend development. 
+               My experiences in technical projects, teaching, and mentoring have 
                helped me grow as a collaborative leader, enabling me to tackle challenges while 
                supporting others. I enjoy combining technical skills with creative problem-solving 
                to deliver meaningful results. I’m a fast learner and am excited to apply what I learn 

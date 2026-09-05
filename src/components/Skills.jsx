@@ -15,6 +15,7 @@ export default function Skills() {
     { name: "C", img: "/skills/c.png" },
     { name: "Git", img: "/skills/git.png" },
     { name: "Java", img: "/skills/java.png" },
+    { name: "Spring Boot", img: "/skills/springboot.webp" },
     { name: "C++", img: "/skills/cpp.png" },
     { name: "Python", img: "/skills/python.png" },
     { name: "Next.js", img: "/skills/nextjs.svg" },
